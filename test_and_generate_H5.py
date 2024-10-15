@@ -26,7 +26,7 @@ import pickle
 # %%
 TRAIN_DIR = os.path.join('interm_data', 'train_intermediate')
 VAL_DIR = os.path.join('interm_data', 'val_intermediate')
-TEST_DIR = os.path.join('interm_data', 'test_intermediate')
+TEST_DIR = os.path.join('interm_data', 'test_obs_intermediate')
 SEED = 13
 epochs = 50
 device = torch.device('cuda:2' if torch.cuda.is_available() else 'cpu')

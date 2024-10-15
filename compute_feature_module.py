@@ -22,12 +22,12 @@ import pickle
 if __name__ == "__main__":
     am = ArgoverseMap()
     for folder in os.listdir(DATA_DIR):
-        if not re.search(r'val', folder):
+        if not re.search(r'test_obs', folder):
         # FIXME: modify the target folder by hand ('val|train|sample|test')
         # if not re.search(r'test', folder):
             continue
         print(f"folder: {folder}")
-        afl = ArgoverseForecastingLoader(os.path.join(DATA_DIR, folder))
+        afl = ArgoverseForecastingLoader(os.path.join(DATA_DIR, folder+"/data"))
         norm_center_dict = {}
         for name in tqdm(afl.seq_list):
             afl_ = afl.get(name)

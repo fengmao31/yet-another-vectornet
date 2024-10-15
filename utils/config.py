@@ -21,6 +21,6 @@ STATIONARY_THRESHOLD = (13)
 color_dict = {"AGENT": "#d33e4c", "OTHERS": "#d3e8ef", "AV": "#007672"}
 LANE_RADIUS = 30
 OBJ_RADIUS = 30
-DATA_DIR = './data'
+DATA_DIR = '/home/fengmao/argoverse-api'
 OBS_LEN = 20
 INTERMEDIATE_DATA_DIR = './interm_data'
